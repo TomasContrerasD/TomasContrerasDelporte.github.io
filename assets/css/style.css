@@ -15,17 +15,21 @@
 body {
   margin: 0;
   font-family: Inter, Arial, Helvetica, sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(120, 160, 255, 0.15), transparent 30%),
+    radial-gradient(circle at 75% 25%, rgba(70, 130, 220, 0.10), transparent 28%),
+    linear-gradient(135deg, #fafcff 0%, #f1f6fc 50%, #e8f0fb 100%);
   color: var(--text);
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 .site-header {
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(120, 140, 180, 0.15);
   position: sticky;
   top: 0;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   z-index: 10;
 }
 
@@ -128,12 +132,13 @@ h1 {
 }
 
 .section {
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 18px;
   padding: 28px;
   margin-bottom: 22px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px rgba(31, 57, 91, 0.08);
+  backdrop-filter: blur(8px);
 }
 
 .section h2 {
