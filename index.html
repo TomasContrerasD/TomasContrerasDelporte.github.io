@@ -9,138 +9,298 @@
 <body>
   <header class="site-header">
     <nav>
-      <a href="index.html" class="logo">Tomás Contreras</a>
       <div class="nav-links">
-        <a href="index.html">About</a>
+        <a href="index.html">Home</a>
         <a href="projects/index.html">Projects</a>
-        <a href="files/TOMÁS_CONTRERAS_CV_EN.pdf">CV EN</a>
-        <a href="files/TOMÁS_CONTRERAS_CV_ES.pdf">CV ES</a>
+        <a href="files/TOMÁS_CONTRERAS_CV_EN.pdf"><img src="assets/img/united_kingdom.png" alt="UK flag" class="flag-icon"> CV EN</a>
+        <a href="files/TOMÁS_CONTRERAS_CV_ES.pdf"><img src="assets/img/chile.png" alt="Chile flag" class="flag-icon"> CV ES</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero hero-grid">
-  <div class="hero-content">
-    <p class="eyebrow">Data Scientist | Data Engineering | AI Systems</p>
-    <h1>Hi, I’m Tomás Contreras.</h1>
-    <p class="hero-text">
-      I’m a Data Scientist with an MSc in Data Science, focused on building data pipelines,
-      AI-assisted workflows, internal analytics tools, and data products that turn complex
-      information into actionable insights.
-    </p>
+  <div class="hero-outer">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <section class="hero hero-grid">
+        <div class="hero-content">
+        <p class="eyebrow">Data Scientist | Data Engineering</p>
+        <h1>Hi, I'm Tomás Contreras</h1>
+        <p class="hero-text">
+          I'm a Data Scientist with an MSc in Data Science, building data pipelines,
+          AI-assisted analytics tools, and machine learning solutions. My current focus is applying
+          data science to football analytics, using data to better understand player performance,
+          tactical patterns, recruitment opportunities, and decision-making in the game.
+        </p>
 
-    <div class="buttons">
-      <a class="button primary" href="files/tomas_contreras_cv_en.pdf" download>Download CV EN</a>
-      <a class="button secondary" href="files/tomas_contreras_cv_es.pdf" download>Download CV ES</a>
-      <a class="button secondary" href="projects/index.html">View Projects</a>
-    </div>
-
-    <div class="social-links">
-      <a href="mailto:tomascontrerasipd@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/tom%C3%A1s-contreras-delporte" target="_blank">LinkedIn</a>
-      <a href="https://github.com/TomasContrerasD" target="_blank">GitHub</a>
-    </div>
-  </div>
-
-  <div class="hero-image-wrapper">
-    <img src="assets/img/1.jpg" alt="Tomás Contreras portrait" class="hero-image">
-  </div>
-</section>
-
-    <section class="section">
-      <h2>About me</h2>
-      <p>
-        My current work combines Python development, data engineering, web scraping,
-        LLM agents, full-stack applications, cloud deployment, and business intelligence.
-        I have professional experience building automated systems that reduce manual work,
-        improve data quality, and support strategic decision-making.
-      </p>
-      <p>
-        I’m also developing a football analytics portfolio focused on applying data science
-        to player performance, tactical analysis, recruitment, and decision-support tools.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Experience</h2>
-
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <h3>Plusmining</h3>
-          <span>Sep 2024 – Present</span>
-        </div>
-        <p class="role">Data Scientist / Data Engineer / Market Intelligence</p>
-
-        <ul>
-          <li>Architect and deploy full-stack production systems using Google Cloud Run, FastAPI, Next.js/React, and OAuth 2.0.</li>
-          <li>Design and maintain automated data pipelines integrating heterogeneous data sources.</li>
-          <li>Build production LLM agents using LangChain and LangGraph for document review, PDF analysis, web search, and multi-step reasoning.</li>
-          <li>Develop intelligence systems for global mining markets, including M&A tracking, commodity fundamentals, and company prospecting.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Education</h2>
-
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <h3>Universidad Adolfo Ibáñez</h3>
-          <span>2023 – 2025</span>
-        </div>
-        <p class="role">Master of Science in Data Science</p>
-        <p>
-          Thesis: 
-          <a href="https://github.com/TomasContrerasD/estimation-metals-concentrations/tree/main" target="_blank">
-            Estimation of heavy metal concentrations in tailings dams using multispectral satellite imagery.
+        <div class="social-links">
+          <a href="mailto:tomascontrerasipd@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
           </a>
+          <a href="https://www.linkedin.com/in/tomas-contreras-delporte/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/TomasContrerasD" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+        <div class="hero-image-wrapper">
+          <img src="assets/img/1.jpg" alt="Tomás Contreras portrait" class="hero-image">
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="band"></div>
+
+  <div class="sections-wrapper">
+
+    <div class="section-block">
+      <h2 class="section-title">About Me</h2>
+      <div class="section">
+        <p>
+          My current work combines Python development, data engineering, web scraping,
+          LLM agents, full-stack applications, cloud deployment, and business intelligence.
+          I have professional experience building automated systems that reduce manual work,
+          improve data quality, and support strategic decision-making.
+        </p>
+        <p>
+          I'm also developing a football analytics portfolio focused on applying data science
+          to player performance, tactical analysis, recruitment, and decision-support tools.
         </p>
       </div>
+    </div>
 
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <h3>Universidad Adolfo Ibáñez</h3>
-          <span>2019 – 2023</span>
+    <div class="section-block">
+      <h2 class="section-title">Experience</h2>
+      <div class="section">
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>Plusmining</h3>
+            <span>Sep 2024 — Present</span>
+          </div>
+          <p class="role">Data Scientist / Data Engineer / Market Intelligence &nbsp;·&nbsp; Santiago, Chile</p>
+
+          <div class="sub-role">
+            <div class="timeline-header">
+              <strong>Data Scientist</strong>
+              <span>Feb 2026 — Present</span>
+            </div>
+            <ul>
+              <li>Architect and deploy a full-stack production system on Google Cloud Run, comprising a streaming FastAPI backend, a Next.js/React frontend, and OAuth 2.0 authentication with domain-restricted access for internal users.</li>
+              <li>Design and maintain automated data pipelines integrating heterogeneous sources.</li>
+              <li>Build and deploy production LLM agents using LangChain and LangGraph, enabling automated document review, PDF analysis, real-time web search, and multi-step reasoning over mining industry reports.</li>
+              <li>Develop domain-specific intelligence systems for global mining markets, including M&A tracking, commodity fundamentals extraction, company prospecting, and internal analytics tools for non-technical users.</li>
+              <li>Collaborate with analysts and senior stakeholders to translate business intelligence needs into automated data solutions, prioritizing workflows that replace high-effort manual research processes.</li>
+            </ul>
+          </div>
+
+          <div class="sub-role">
+            <div class="timeline-header">
+              <strong>Data &amp; Market Analyst</strong>
+              <span>Aug 2025 — Feb 2026</span>
+            </div>
+            <ul>
+              <li>Engineer automated data workflows to ingest, process, and structure unstructured market data from multiple external sources.</li>
+              <li>Produce monthly and semi-annual market intelligence reports assessing production, financial performance, commodity trends, and strategic developments.</li>
+            </ul>
+          </div>
+
+          <div class="sub-role">
+            <div class="timeline-header">
+              <strong>Market Analyst</strong>
+              <span>Jan 2025 — Aug 2025</span>
+            </div>
+            <ul>
+              <li>Automate data collection workflows and analyze operational and financial data across national and international mining companies.</li>
+            </ul>
+          </div>
+
+          <div class="sub-role">
+            <div class="timeline-header">
+              <strong>Junior Analyst Intern</strong>
+              <span>Sep 2024 — Dec 2024</span>
+            </div>
+            <ul>
+              <li>Collect, consolidate, and analyze operational data to support client-facing reports, presentations, industry benchmarks, and internal research outputs.</li>
+            </ul>
+          </div>
         </div>
-        <p class="role">Industrial Civil Engineering, Business Analytics</p>
+
       </div>
-    </section>
+    </div>
 
-    <section class="section">
-      <h2>Skills</h2>
+    <div class="section-block">
+      <h2 class="section-title">Education</h2>
+      <div class="section">
 
-      <div class="skills-grid">
-        <div>
-          <h3>Programming</h3>
-          <p>Python, SQL, R, TypeScript, Git</p>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>Universidad Adolfo Ibáñez</h3>
+            <span>2023 – 2025</span>
+          </div>
+          <p class="role">Master of Science in Data Science</p>
+          <p>
+            Thesis:
+            <a href="https://github.com/TomasContrerasD/estimation-metals-concentrations/tree/main" target="_blank">
+              Estimation of heavy metal concentrations in tailings dams using multispectral satellite imagery.
+            </a>
+          </p>
+          <ul>
+              <li>Developed supervised machine learning models to estimate metal content in tailings deposits in Chile.</li>
+              <li>Tested and compared regression models, improving predictive performance by approximately 10%.</li>
+            </ul>
         </div>
-        <div>
-          <h3>ML & Data Science</h3>
-          <p>pandas, NumPy, scikit-learn, TensorFlow, PyTorch, XGBoost, statistical modeling</p>
+        
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>Universidad Adolfo Ibáñez</h3>
+            <span>2019 – 2023</span>
+          </div>
+          <p class="role">Industrial Civil Engineering, Business Analytics</p>
         </div>
-        <div>
-          <h3>AI & LLM Engineering</h3>
-          <p>LangChain, LangGraph, prompt engineering, AI agent workflows</p>
-        </div>
-        <div>
-          <h3>Full-Stack & Cloud</h3>
-          <p>FastAPI, Next.js, React, Google Cloud Platform, BigQuery, PostgreSQL</p>
-        </div>
-        <div>
-          <h3>Data Pipelines</h3>
-          <p>ETL pipelines, web scraping, APIs, Scrapy, BeautifulSoup, Playwright</p>
-        </div>
-        <div>
-          <h3>Visualization</h3>
-          <p>Power BI, Looker Studio, Tableau, Plotly, matplotlib</p>
+
+      </div>
+    </div>
+
+    <div class="section-block">
+      <h2 class="section-title">Skills</h2>
+      <div class="section">
+        <div class="skills-grid">
+          <div>
+            <h3>Programming</h3>
+            <p>Python, SQL, R, TypeScript, Git</p>
+          </div>
+          <div>
+            <h3>ML &amp; Data Science</h3>
+            <p>pandas, NumPy, scikit-learn, TensorFlow, PyTorch, XGBoost, statistical modeling</p>
+          </div>
+          <div>
+            <h3>AI &amp; LLM Engineering</h3>
+            <p>LangChain, LangGraph, prompt engineering, AI agent workflows</p>
+          </div>
+          <div>
+            <h3>Full-Stack &amp; Cloud</h3>
+            <p>FastAPI, Next.js, React, Google Cloud Platform, BigQuery, PostgreSQL</p>
+          </div>
+          <div>
+            <h3>Data Pipelines</h3>
+            <p>ETL pipelines, web scraping, APIs, Scrapy, BeautifulSoup, Playwright</p>
+          </div>
+          <div>
+            <h3>Visualization</h3>
+            <p>Power BI, Looker Studio, Tableau, Plotly, matplotlib</p>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    <p>© 2026 Tomás Contreras. Built with GitHub Pages.</p>
-  </footer>
+  </div>
+
+  <script>
+  (function () {
+    const canvas = document.getElementById('hero-canvas');
+    const ctx    = canvas.getContext('2d');
+    const heroOuter = document.querySelector('.hero-outer');
+
+    const mouse = { x: -9999, y: -9999 };
+
+    function resize() {
+      canvas.width  = heroOuter.offsetWidth;
+      canvas.height = heroOuter.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    window.addEventListener('mousemove', function (e) {
+      const r = canvas.getBoundingClientRect();
+      mouse.x = e.clientX - r.left;
+      mouse.y = e.clientY - r.top;
+    });
+    document.addEventListener('mouseleave', function () {
+      mouse.x = -9999;
+      mouse.y = -9999;
+    });
+
+    function rand(min, max) { return Math.random() * (max - min) + min; }
+
+    function Node() {
+      this.x     = rand(0, canvas.width);
+      this.y     = rand(0, canvas.height);
+      this.vx    = rand(-0.38, 0.38);
+      this.vy    = rand(-0.38, 0.38);
+      this.r     = rand(2.5, 5.5);
+      this.alpha = rand(0.30, 0.70);
+    }
+
+    Node.prototype.update = function () {
+      this.x += this.vx;
+      this.y += this.vy;
+
+      if (this.x < 0 || this.x > canvas.width)  this.vx *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+
+      const dx   = this.x - mouse.x;
+      const dy   = this.y - mouse.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      const R    = 130;
+
+      if (dist < R && dist > 0.5) {
+        const strength = ((R - dist) / R) * 5;
+        this.x += (dx / dist) * strength;
+        this.y += (dy / dist) * strength;
+      }
+    };
+
+    Node.prototype.draw = function () {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(0,80,157,' + this.alpha + ')';
+      ctx.fill();
+    };
+
+    const LINK_DIST = 155;
+    const nodes = Array.from({ length: 55 }, function () { return new Node(); });
+
+    function drawLinks() {
+      for (var i = 0; i < nodes.length; i++) {
+        for (var j = i + 1; j < nodes.length; j++) {
+          var dx   = nodes[i].x - nodes[j].x;
+          var dy   = nodes[i].y - nodes[j].y;
+          var dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < LINK_DIST) {
+            var alpha = (1 - dist / LINK_DIST) * 0.28;
+            ctx.strokeStyle = 'rgba(0,80,157,' + alpha + ')';
+            ctx.lineWidth   = 0.9;
+            ctx.beginPath();
+            ctx.moveTo(nodes[i].x, nodes[i].y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function loop() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawLinks();
+      nodes.forEach(function (n) { n.update(); n.draw(); });
+      requestAnimationFrame(loop);
+    }
+    loop();
+  })();
+  </script>
+
+  <div class="footer-band">
+    <footer>
+      <p>© 2026 Tomás Contreras. Built with GitHub Pages.</p>
+    </footer>
+  </div>
 </body>
 </html>
