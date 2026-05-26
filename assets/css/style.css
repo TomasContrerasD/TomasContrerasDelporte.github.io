@@ -290,26 +290,41 @@ h1 {
   margin: 4px 0 10px;
 }
 
-/* Sub-roles inside a company */
-.sub-role {
-  margin-top: 18px;
-  padding: 10px 0 0 16px;
-  border-left: 2px solid rgba(0, 80, 157, 0.22);
+/* Roles inside a company */
+.exp-role {
+  margin-top: 14px;
 }
 
-.sub-role .timeline-header strong {
-  font-size: 0.95rem;
-  color: var(--text);
+.exp-role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.exp-role-title {
+  color: var(--accent);
   font-weight: 700;
+  font-style: italic;
+  font-size: 0.95rem;
 }
 
-.sub-role ul {
-  margin: 8px 0 0;
-  padding-left: 18px;
+.exp-role-date {
+  color: var(--accent);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
-.sub-role ul li {
-  margin-bottom: 6px;
+.exp-role ul {
+  margin: 6px 0 0;
+  padding-left: 20px;
+}
+
+.exp-role ul li {
+  margin-bottom: 5px;
   font-size: 0.9rem;
   color: var(--muted);
   line-height: 1.55;
@@ -370,6 +385,71 @@ h1 {
 .project-status.completed {
   background: rgba(0, 120, 60, 0.10);
   color: #00703c;
+}
+
+/* ── Project detail page ──────────────────────────────── */
+.project-img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(0, 80, 157, 0.14);
+  margin: 20px auto 8px;
+}
+
+.project-img-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-tag {
+  background: rgba(0, 80, 157, 0.08);
+  color: var(--accent);
+  border: 1px solid rgba(0, 80, 157, 0.18);
+  border-radius: 8px;
+  padding: 5px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.section ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.section ol li {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 10px 22px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: background 0.22s, transform 0.22s;
+}
+
+.btn-github:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+  text-decoration: none;
 }
 
 /* ── Skills grid ──────────────────────────────────────── */
